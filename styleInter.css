@@ -1,0 +1,104 @@
+section:first-of-type {
+    display: inline-block;
+    position: relative;
+    left: 0px;
+}
+
+section:first-of-type aside article {
+    width: 150px;
+    height: 150px;
+    margin: 0 0 35px 0;
+    display: inline-block;
+    position: relative;
+    background-color: #f2c22e;
+}
+
+section:first-of-type aside article img {
+    filter: invert(100%);
+    display: inline-flex;
+    position: absolute;
+    margin: 15px 0 0 25px;
+    height: 100px;
+    width: 100px;
+}
+
+section:first-of-type aside article p {
+    color: #ffffff;
+    font-family: nexa;
+    font-size: 1.20em;
+    margin: 100px auto;
+    text-align: center;
+}
+
+aside {
+    width: 200px;
+    margin: 50px 0 15px 0;
+    display: block;
+    position: relative;
+}
+
+section:first-of-type article:nth-child(1n+2) img {
+    transform: rotateZ(45deg);
+}
+
+section:first-of-type a article p {
+    padding: 15px 0 0 0;
+}
+
+section:last-of-type {
+    display: inline-flex;
+    position: relative;
+    margin: 50px 0;
+    left: 0;
+    vertical-align: top;
+}
+
+.quadrado {
+    width: 500px;
+    height: 700px;
+    background-color: gold;
+    position: relative;
+}
+
+.t {
+    position: relative;
+    width: 250px;
+    margin: 0 auto 0 auto;
+    font-family: nexa;
+}
+
+.t tbody td {
+    height: 30px;
+    width: 100%;
+    padding: 0 0 0 15px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #000000;
+}
+
+.t tfoot td {
+    text-align: right;
+    background-color: #f2c22e;
+    height: 30px;
+    padding: 0 15px 0 0;
+    margin: 0 auto 15px auto;
+    font-weight: 700;
+}
+
+.t tbody .optSel {
+    background-color: #161617;
+    color: #ffffff;
+}
+
+.t tfoot td:active {
+    background-color: #d9ae29;
+}
+
+table tbody,
+table tfoot {
+    cursor: pointer;
+    user-select: none;
+}
+
+.desativado {
+    visibility: hidden;
+}

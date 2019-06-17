@@ -1,0 +1,84 @@
+﻿section:first-of-type {
+    height: 400px;
+    position: relative;
+    display: flex;
+    background-image: url("image/servicos.jpg");
+    background-position-x: 30px;
+    background-position-y: -130px;
+}
+
+section:first-of-type:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+section .span {
+    color: #ffffff;
+    font-size: 4em;
+    font-family: nexa;
+    z-index: 3;
+    margin: 150px auto;
+    display: flex;
+    border: 5px solid #ffffff;
+    padding: 3px 10px;
+    position: initial;
+}
+
+section .titulo {
+    color: gold;
+    margin: 50px 0 15px 0;
+    font-size: 2em;
+    font-family: nexa;
+    z-index: 3;
+}
+
+article {
+    width: 350px;
+    height: 250px;
+    display: inline-flex;
+    margin: 35px 0 0 40px;
+    position: relative;
+}
+article div{
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+}
+
+article img {
+    width: 350px;
+    display: block;
+    clear: both;
+    animation: suaveOut ease-out 0.3s;
+}
+article img:hover{
+    margin: -50px 0 0 0;
+    animation: suaveIn ease-out 0.3s;
+}
+
+article p {
+    margin: 150px 0 0 0;
+    position: absolute;
+    font-family: Nexa;
+}
+
+article span {
+    color: gold;
+    font-weight: 700;
+}
+
+@keyframes suaveIn{
+    0% {margin: 0 0 0 0;}
+    100% {margin: -50px 0 0 0;}
+}
+@keyframes suaveOut{
+    0% {margin: -50px 0 0 0;}
+    100% {margin: 0 0 0 0;}
+}

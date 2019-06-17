@@ -1,0 +1,60 @@
+section:first-of-type {
+    height: 400px;
+    position: relative;
+    display: flex;
+    background-image: url("image/sobre.jpg");
+    background-position-x: -550px;
+    background-position-y: -130px;
+}
+
+section:first-of-type:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+section .span {
+    color: #ffffff;
+    font-size: 4em;
+    font-family: nexa;
+    z-index: 3;
+    margin: 150px auto;
+    display: flex;
+    border: 5px solid #ffffff;
+    padding: 3px 10px;
+    position: initial;
+}
+
+section span {
+    color: gold;
+    font-size: 1.5em;
+    font-family: nexa;
+    position: absolute;
+    z-index: 3;
+}
+
+article:first-of-type {
+    margin: 35px 0 0 0;
+}
+
+article:last-of-type {
+    margin: 0 0 35px 0;
+}
+
+article {
+    color: #000000;
+    font-size: 1.15em;
+    font-family: nexa;
+    padding: 15px 0;
+}
+
+article span {
+    padding-bottom: 10px;
+    display: block;
+}

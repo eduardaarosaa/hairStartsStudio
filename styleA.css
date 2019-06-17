@@ -1,0 +1,139 @@
+section:first-of-type {
+    height: 400px;
+    position: relative;
+    display: flex;
+    background-image: url("image/agendamento.jpg");
+    background-position-y: -350px;
+}
+
+section:first-of-type:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+section .span {
+    color: #ffffff;
+    font-size: 4em;
+    font-family: nexa;
+    z-index: 3;
+    margin: 150px auto;
+    display: flex;
+    border: 5px solid #ffffff;
+    padding: 3px 10px;
+    position: initial;
+}
+
+.calendario {
+    margin: 50px 0 50px 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font-family: Nexa;
+    display: inline-block;
+}
+
+table,
+tr,
+td {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 1.5em;
+    background-color: orange;
+    color: #fff;
+}
+
+table tr {
+    width: 600px;
+    height: 70px;
+}
+
+table tr:nth-of-type(1) {
+    border: 0px;
+    height: 40px;
+    background-color: gold;
+}
+
+table td {
+    vertical-align: top;
+    text-indent: 10px;
+    width: 70px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+table tr:nth-of-type(1)>td {
+    border: 0px;
+    vertical-align: middle;
+}
+
+table td p {
+    margin: 5px 0 0 -5px;
+}
+
+.atual {
+    color: blue;
+}
+
+.hide {
+    display: none;
+}
+
+aside {
+    width: 300px;
+    height: 200px;
+    float: right;
+    margin: 150px 250px 0 0;
+    font-family: Nexa;
+    text-align: center;
+}
+
+.call {
+    color: gold;
+    font-size: 1.5em;
+    font-family: nexa;
+    position: absolute;
+    z-index: 3;
+}
+
+.agenda {
+    margin-top: -100px;
+    width: 350px;
+    height: 421px;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
+.agenda input {
+    height: 30px;
+    width: 30%;
+    text-align: center;
+    padding: 0 0 0 0;
+    background-color: gold;
+    margin: 15px 0 0 0;
+    float: right;
+    border: 1px solid #000000;
+}
+
+.agenda select {
+    height: 30px;
+    width: 100%;
+    padding: 0 0 0 15px;
+    margin: 0 0 15px 0;
+    border: 1px solid #000000;
+}
+
+.agenda .data {
+    width: 30%;
+    margin: 0 15px 0 0;
+}

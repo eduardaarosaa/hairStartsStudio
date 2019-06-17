@@ -1,0 +1,74 @@
+section article {
+    width: 150px;
+    height: 150px;
+    margin: 50px 0 50px 110px;
+    display: inline-flex;
+    position: relative;
+    background-color: #f2c22e;
+}
+
+section img {
+    filter: invert(100%);
+    display: inline-flex;
+    position: absolute;
+    margin: 20px 0 0 30px;
+    width: 60%;
+}
+
+section p {
+    color: #ffffff;
+    font-family: nexa;
+    font-size: 2em;
+    margin: 100px auto;
+}
+
+table {
+    display: inline-table;
+    min-width: 325px;
+    max-width: 400px;
+    position: relative;
+    margin: 30px 0 0 50px;
+    border-collapse: collapse;
+}
+table tr{
+    height: 50px;
+    font-family: nexa;
+    background-color: #f4f4f4;
+    position: relative;
+}
+table td{
+    background-color: #f2c22e;
+    font-family: nexa;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    font-weight: 700;
+    position: relative;
+    padding: 10px 10px 10px 15px;
+}
+table tr td div{
+    position: absolute;
+    top: 0;
+    right: 35px;
+}
+.fechar {
+    position: absolute;
+    margin: 0 0 0 0;
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    z-index: 2;
+    filter: invert(0%);
+    cursor: pointer;
+}
+table td:nth-of-type(even){
+    background-color: #f4ce57;
+    
+
+}
+table td:nth-last-of-type(odd){
+    font-weight: 100;
+}
+.com{
+    background-color: #f7da81;
+    text-justify: distribute-all-lines;
+}

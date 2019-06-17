@@ -1,0 +1,76 @@
+section:first-of-type {
+    height: 400px;
+    position: relative;
+    display: flex;
+    background-image: url("image/galeria.jpg");
+    background-position-y: -130px;
+}
+
+section:first-of-type:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+section .span {
+    color: #ffffff;
+    font-size: 4em;
+    font-family: nexa;
+    z-index: 3;
+    margin: 150px auto;
+    display: flex;
+    border: 5px solid #ffffff;
+    padding: 3px 10px;
+    position: initial;
+}
+
+article p {
+    color: gold;
+    font-size: 1.5em;
+    font-family: nexa;
+    position: absolute;
+    z-index: 3;
+}
+
+article {
+    width: 350px;
+    height: 300px;
+    display: inline-flex;
+    margin: 35px 0 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+article img {
+    position: absolute;
+    top: 50px;
+    width: 350px;
+    display: block;
+    clear: both;
+}
+
+article:first-of-type p {
+    display: block;
+    width: 500px;
+}
+
+article p {
+    margin: 0 0 0 0;
+    position: absolute;
+    font-family: Nexa;
+}
+
+article span {
+    color: gold;
+    font-weight: 700;
+}
+
+article:last-of-type {
+    margin: 0 0 75px 0;
+}

@@ -1,0 +1,118 @@
+section:first-of-type {
+    background-image: url("image/contato.jpg");
+    height: 400px;
+    background-position-y: -525px;
+    display: flex;
+    position: relative;
+}
+
+section:first-of-type::after {
+    content: "";
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.60;
+}
+
+section:first-of-type span {
+    color: #ffffff;
+    font-size: 4em;
+    font-family: nexa;
+    z-index: 2;
+    margin: 150px auto;
+    display: flex;
+    border: 5px solid #ffffff;
+    padding: 3px 10px;
+}
+
+form {
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    margin: 30px auto 50px auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 0 0 0;
+    position: relative;
+    float: right;
+    clear: both;
+    font-family: nexa;
+}
+
+form p {
+    font-size: 1.15em;
+    text-indent: 25px;
+    margin: 0 0 -10px 0;
+    padding: 0 0 0 0;
+}
+
+input {
+    width: calc(450px);
+    height: 35px;
+    border: 1px solid #000000;
+    color: #333333;
+    margin: 0 auto;
+    display: flex;
+    text-indent: 5px;
+}
+
+textarea {
+    width: calc(450px);
+    max-width: 90%;
+    height: 150px;
+    max-height: 290px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    display: flex;
+}
+
+.pri {
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    display: inline-flex;
+    right: 105px;
+    position: absolute;
+}
+
+button {
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    display: inline-flex;
+    right: 25px;
+    position: absolute;
+}
+
+article {
+    display: flex;
+    width: 600px;
+    float: left;
+    clear: both;
+    font-size: 2.9em;
+    position: absolute;
+    padding: 100px 0 0 50px;
+    text-align: center;
+    font-family: nexa;
+}
+
+.read {
+    background-color: #d1d1d1;
+    text-indent: 15px;
+    font-weight: 700;
+}
+
+.error {
+    top: 480px;
+    margin: 0 0 0 -15px;
+}
+
+.sucess {
+    top: 490px;
+    margin: 0 0 0 -15px;
+}

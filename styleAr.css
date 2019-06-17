@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "nexa";
+    src: url('font/Nexa Light.otf');
+}
+
+@font-face {
+    font-family: "cinzel";
+    src: url("font/Cinzel-Regular.otf");
+}
+
+@font-face {
+    font-family: "Cinzel decorative";
+    src: url("font/CinzelDecorative-Regular.otf");
+}
+
+.nav a:last-child {
+    padding: 9px 20px;
+    background-color: #f2c22e !important;
+    color: #333333;
+}
+
+.local {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 25px;
+    font-size: 2em;
+    color: #ffffff;
+    font-family: nexa;
+}
+
+.menu p {
+    z-index: 3;
+    color: #333333;
+    font-family: nexa;
+    margin: 10px 15px 0 0;
+}
+
+section:first-of-type article {
+    width: 250px;
+    height: 250px;
+    margin: 50px 0 50px 110px;
+    display: inline-flex;
+    position: relative;
+    background-color: #f2c22e;
+}
+
+section:first-of-type img {
+    filter: invert(100%);
+    display: inline-flex;
+    position: absolute;
+    width: 128px;
+    margin: 50px 0 0 60px;
+}
+
+section:first-of-type p {
+    color: #ffffff;
+    font-family: nexa;
+    font-size: 2em;
+    margin: 200 auto;
+}
+
+.alerta {
+    font-family: nexa;
+    margin: 25px auto;
+    display: block;
+    box-sizing: border-box;
+    font-size: 1.25em;
+}
+
+section a {
+    text-decoration: none;
+}
+
+section article:hover {
+    background-color: #d9ae29;
+    cursor: pointer;
+}
+
+.login {
+    position: relative;
+    width: 250px;
+    margin: 100px auto 200px auto;
+    font-family: nexa;
+}
+
+.login input {
+    height: 30px;
+    width: 100%;
+    padding: 0 0 0 15px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #000000;
+}
+
+.login a {
+    float: left;
+    margin: 4px 0 0 0;
+    padding: 3px 3px 3px 0;
+    color: #0000ee;
+}
+
+.login select {
+    height: 30px;
+    width: 100%;
+    padding: 0 0 0 15px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #000000;
+}
+
+.login button {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    top: -25px;
+    margin: 0 0 0 -98px;
+    width: 300px;
+    color: red;
+}
+
+.sucess {
+    position: absolute;
+    top: -25px;
+    margin: 0 0 0 -98px;
+    width: 300px;
+    color: #0000ee;
+}
+
+.alert {
+    position: absolute;
+    top: -25px;
+    margin: 0 0 0 -98px;
+    width: 300px;
+    color: red;
+}

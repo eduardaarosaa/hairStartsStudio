@@ -1,0 +1,23 @@
+CREATE TABLE agendamento (
+    idAgendamento int not null AUTO_INCREMENT,
+	idLogin int(4) not null,
+    idAtendente int not null,
+    idServ int not null,
+);
+
+CREATE table calendario (
+	ano int(2) not null,
+    mes int(2) not null,
+    dia int(2) not null,
+    idAtendente int not null,
+    idServ int not null,
+    idStatus int not null,
+    idLogin int not null,
+    idAgendamento int not null AUTO_INCREMENT,
+    horario int(4) not null,
+    PRIMARY KEY (idAgendamento),
+    FOREIGN KEY (idAtendente) REFERENCES atendente(idAtendente),
+    FOREIGN KEY (idServ) REFERENCES servicos(idServ),
+    FOREIGN KEY (idStatus) REFERENCES superstatus(idStatus),
+    FOREIGN KEY (idLogin) REFERENCES login(idLogin)
+);
